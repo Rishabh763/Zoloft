@@ -31,3 +31,65 @@ body {
     text-wrap: balance;
   }
 }
+
+form {
+  width: 600px;
+  margin: 48px auto 36px auto;
+  background-color: #1e002acc;
+  padding: 48px 36px;
+  border-radius: 10px;
+}
+
+form label:first-of-type {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 24px 0;
+  font-size: 18px;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  max-width: 600px;
+  min-height: 32px;
+  margin-top: 8px;
+  padding: 8px 8px;
+  border-radius: 4px;
+  border: 0;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+fieldset input {
+  min-height: unset;
+  width: 15px;
+  height: 15px;
+  vertical-align: text-line;
+}
+
+fieldset label {
+  margin: 4px 0;
+}
+
+legend {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.grid{
+  display: grid;
+  gap: 2rem ;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,400px),1fr));
+}
