@@ -37,10 +37,9 @@ body {
   }
 }
 
-form {
+.form {
   width: 600px;
   margin: 48px auto 36px auto;
-  background-color: #1e002acc;
   padding: 48px 36px;
   border-radius: 10px;
 }
@@ -51,8 +50,9 @@ form label:first-of-type {
 
 label {
   display: block;
-  margin: 24px 0;
-  font-size: 18px;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: black;
 }
 
 input,
@@ -91,6 +91,9 @@ fieldset label {
 legend {
   font-size: 18px;
   margin-bottom: 8px;
+  color: black;
+  font-size: 1.8rem;
+
 }
 
 .grid{
@@ -116,4 +119,24 @@ legend {
 .sign:hover{
   background-color: rgba(0, 0, 0, 0.7);
   transform: scale(1.05);
+}
+
+.link{
+  padding: 8rem 16rem;
+  padding-bottom: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link p{
+  width: 5rem;
+  aspect-ratio: 1;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items:center;
+  font-size: 2rem;
+  font-weight: 700;
 }

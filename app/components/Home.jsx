@@ -8,7 +8,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { useEffect } from "react";
 import Navbar from './Navbar';
 
-const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", ""];
+const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF","#9122ff"];
 
 export const Home = () => {
   const color = useMotionValue(COLORS_TOP[0]);
@@ -37,8 +37,8 @@ export const Home = () => {
       >
         <Navbar className="z-10"></Navbar>
         <button className='sign'>sign up</button>
-        <div className="relative z-10 flex flex-col items-center">
-          <h1 className="max-w-5xl bg-gradient-to-br from-black to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
+        <div className="relative z-10 flex flex-col items-center gap-4">
+          <h1 className="max-w-5xl bg-gradient-to-br from-black to-gray-400 bg-clip-text text-center text-3xl font-bold leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
           Empower Your Mind, Embrace Your Wellness
           </h1>
           <p className="my-6 max-w-7xl text-black text-center text-base leading-relaxed md:text-lg md:leading-relaxed">

@@ -78,7 +78,7 @@ function page() {
                         >
                           <motion.div className="relative">
                             <motion.button
-                              className="absolute top-2 right-2 py-1 px-2 text-center text-white bg-red-500 rounded-full"
+                              className="absolute w-fit top-2 right-2 py-1 px-2 text-center text-white bg-red-500 rounded-full"
                               onClick={() => setSelectedId('')}
                             >
                               Close

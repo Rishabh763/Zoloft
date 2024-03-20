@@ -28,25 +28,36 @@ function Page() {
             "id":3,
             "q":"Do you experience a loss of interest or pleasure in activities you once enjoyed?"
         }, 
-            {
-                "id":4,
-                "q":"Do you feel hopeless or helpless about the future?"
-            },
-            {
-                "id":5,
-                "q":"Have you experienced or witnessed a traumatic event that involved actual or threatened death, serious injury, or sexual violence?"
+        {
+            "id":4,
+            "q":"Do you feel hopeless or helpless about the future?"
+        },
+        {
+            "id":5,
+            "q":"Have you experienced or witnessed a traumatic event that involved actual or threatened death, serious injury, or sexual violence?"
 
-            }
+        },
+        {
+            "id":6,
+            "q":"Have you or threatened death, serious injury, or sexual violence?"
+
+        },
+        {
+            "id":7,
+            "q":"Have you experienced or witnessed a traumatic event that , or sexual violence?"
+
+        }
         
     ]
 
     return (
-        <div className="form w-[100%]">
+        <div className="w-[100%] bg-white min-h-screen">
             <div className="link flex gap-6">
-                <p className={activeLink === '1' ? 'active' : ''} onClick={() => handleLinkClick('1', 0)}>1</p>
-                <p className={activeLink === '2' ? 'active' : ''} onClick={() => handleLinkClick('2', 1)}>2</p>
-                <p className={activeLink === '3' ? 'active' : ''} onClick={() => handleLinkClick('3', 2)}>3</p>
-                <p className={activeLink === '4' ? 'active' : ''} onClick={() => handleLinkClick('4', 3)}>4</p>
+            {questions.map((question, index) => {
+                return (
+                        <p key={question.id} className={activeLink === index ? 'active' : ''} onClick={() => handleLinkClick(`${question.id}`, index)}>{question.id}</p>
+                    )})
+                }
             </div>
             {questions.map((question, index) => {
                 if (index === current) {
