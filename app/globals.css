@@ -8,6 +8,11 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+::selection{
+  background-color: black;
+  color: white;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -91,5 +96,24 @@ legend {
 .grid{
   display: grid;
   gap: 2rem ;
-  grid-template-columns: repeat(auto-fit,minmax(min(100%,400px),1fr));
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr));
+}
+
+.sign{
+  position: fixed;
+  top: 2.5rem;
+  right: 3rem;
+  background-color: black;
+  width: fit-content;
+  border-radius: 100vw;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  padding: 0.5rem 2rem;
+}
+
+.sign:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
 }
