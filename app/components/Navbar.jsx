@@ -11,7 +11,7 @@ const Navbar = () => {
 
 
   return (
-    <motion.div  className="p-14 bg-black flex items-center flex-wrap gap-8">
+    <motion.div  className="z-[999] fixed left-1/2 translate-x-[-50%] px-4 py-14 flex items-center flex-wrap gap-8">
       {tabs.map((tab) => (
         <Chip
           text={tab}
@@ -49,5 +49,6 @@ const Chip = ({
     </button>
   );
 };
+
 
 export default Navbar
